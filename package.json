@@ -1,0 +1,47 @@
+{
+  "name": "rollup-lib-cli",
+  "author": "li305263",
+  "version": "0.0.1",
+  "homepage": "https://github.com/li305263/rollup-lib-cli",
+  "description": "rollup + eslint + typeScript + babel + uglify + jest",
+  "main": "dist/btools.cjs.js",
+  "module": "dist/btools.esm.js",
+  "browser": "dist/btools.umd.js",
+  "browserMin": "dist/btools.min.js",
+  "keywords": [
+    "rollup",
+    "lib",
+    "cli",
+    "cli",
+    "eslint",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/jest": "^26.0.8",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^26.2.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
