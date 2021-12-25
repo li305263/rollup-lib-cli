@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { eslint } from 'rollup-plugin-eslint';
-import { uglify } from 'rollup-plugin-uglify';
+import { terser } from 'rollup-plugin-terser';
 import ts from 'rollup-plugin-typescript2';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
@@ -20,7 +20,7 @@ export default [
         file: pkg.browserMin,
         format: 'umd',
         name: 'version',
-        plugins: [uglify()],
+        plugins: [terser()],
       },
     ],
     plugins: [
