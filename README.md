@@ -1,8 +1,10 @@
-### rollup-lib-cli
+## rollup-lib-cli template
+## rollup-lib-cli 模版
 
-rollup-lib-cli
-快速开发 rollup 库脚手架
+### quick development rollup cli
+### 快速开发 rollup 库脚手架
 
-### 集合 rollup + eslint + typeScript + babel + uglify + jest
+### rollup + eslint + typeScript + babel + uglify + jest
 
-快速开发 cjs esm umd 库/NPM 包
+### quick development cjs esm umd library/NPM
+### 快速开发 cjs esm umd 库/NPM 包
